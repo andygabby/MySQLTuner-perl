@@ -531,7 +531,7 @@ sub validate_tuner_version {
 
     my $update;
     my $url =
-"https://raw.githubusercontent.com/major/MySQLTuner-perl/master/mysqltuner.pl";
+"";
     my $httpcli = get_http_cli();
     if ( $httpcli =~ /curl$/ ) {
         debugprint "$httpcli is available.";
@@ -572,7 +572,7 @@ sub update_tuner_version {
 
     #use Cwd;
     my $update;
-    my $url = "https://raw.githubusercontent.com/major/MySQLTuner-perl/master/";
+    my $url = "";
     my @scripts =
       ( "mysqltuner.pl", "basic_passwords.txt", "vulnerabilities.csv" );
     my $totalScripts    = scalar(@scripts);
